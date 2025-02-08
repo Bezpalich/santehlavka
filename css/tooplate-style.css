@@ -26,6 +26,10 @@ p {
 	line-height: 22px;
 }
 
+a{
+	color: black;
+}
+
 .primary-button a {
 	text-decoration: none;
 	padding: 10px 18px;
@@ -370,12 +374,19 @@ p {
 =======================*/
 
 footer {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-around;
 	text-align: center;
 	background-image: url(../img/footer-bg.png);
 	background-size: cover;
 	width: 100%;
 	background-repeat: no-repeat;
-	padding: 11% 0px 4% 0px;
+
+}
+.card{
+	margin-top: 1em ;
+	object-fit: contain;
 }
 
 footer ul {
@@ -426,6 +437,50 @@ footer a {
 
 footer a:hover {
 	color: #3CF;
+}
+
+.infocon{
+	
+	font-size: 30px;
+	width: 75%;
+	height: auto;
+	
+
+}
+.take>P{ 
+	margin: 1em;
+	height: auto;
+	font-weight: 400;
+
+}
+.infotable{
+	display: flex;
+}
+.infotable1{
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	justify-content: space-around;
+	width: 50%;
+}
+.infotable2{
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	justify-content: space-around;
+	width: 50%;
+}
+.about{
+	display: flex;
+	margin: 0px;
+	padding-bottom: 1em;
+	padding-top: 1em;
+	margin-left: 1em;
+	border-bottom: solid;
+	
+	
+	font-size: 25px;
+	font-weight: 900;
 }
 
 
@@ -710,8 +765,31 @@ footer a:hover {
 	}
 
 	footer {
-		margin-top: -50px;
-		padding: 200px 0px 20px 0px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		
+	}
+	.infotable{
+		display: flex;
+		flex-direction: column;
+	}
+	.infotable1{
+		width: 100%;
+	}
+	.infotable2{
+		width: 100%;
+	}
+	.infocon{
+		display: flex;
+		flex-direction: column;
+		height: auto;
+	}
+	.about{
+		margin: 0;
+	}
+	.card{
+		width: 50%;
 	}
 }
 
@@ -789,7 +867,7 @@ body.lb-disable-scrolling {
 
 .lb-outerContainer {
   position: relative;
-  *zoom: 1;
+  zoom: 1;
   width: 250px;
   height: 250px;
   margin: 0 auto;
@@ -887,7 +965,7 @@ body.lb-disable-scrolling {
 .lb-dataContainer {
   margin: 0 auto;
   padding-top: 5px;
-  *zoom: 1;
+  zoom: 1;
   width: 100%;
   -moz-border-radius-bottomleft: 4px;
   -webkit-border-bottom-left-radius: 4px;
