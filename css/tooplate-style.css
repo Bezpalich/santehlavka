@@ -10,25 +10,11 @@ http://www.tooplate.com/view/2091-ziggy
 BASIC STYLE
 ============*/
 
-ul {
-	padding: 0;
-	margin: 0;
-	list-style: none;
-}
 
 body {
 	font-family: 'Open Sans', sans-serif;
 }
 
-p {
-	font-size: 13px;
-	color: #7a7a7a;
-	line-height: 22px;
-}
-
-a{
-	color: black;
-}
 
 .primary-button a {
 	text-decoration: none;
@@ -373,116 +359,45 @@ a{
 ----- FOOTER SECTION ----
 =======================*/
 
-footer {
+.footer{
 	display: flex;
-	flex-direction: row-reverse;
-	justify-content: space-around;
-	text-align: center;
-	background-image: url(../img/footer-bg.png);
-	background-size: cover;
-	width: 100%;
-	background-repeat: no-repeat;
-
+	justify-content: center; /* Выравнивание по горизонтали */
+	align-items: center; /* Выравнивание по вертикали */
+	
 }
-.card{
-	margin-top: 1em ;
-	object-fit: contain;
+.ftt{
+	display: flex;
+	
+	justify-content: center;
 }
-
-footer ul {
-	padding: 0;
-	margin: 0;
-	list-style: none;
+.ft{
+	margin-left: 20px;
+	margin-right: 20px;
 }
-
-footer ul li {
-	display: inline-block;
-	margin: 0 3px;
-}
-
-footer ul li a {
+button {
+	padding: 10px 20px;
 	font-size: 16px;
-	color: #415b90;
-	display: inline-block;
-	width: 38px;
-	height: 38px;
-	line-height: 38px;
-	text-align: center;
-	background-color: #fff;
-	border-radius: 50%;
-}
-
-footer ul li a:hover {
-	background-color: #22304d;
-	color: #415b90;
-	transition: all 0.3s;
-}
-
-footer p {
-	margin-top: 20px;
-	font-size: 13px;
-	font-weight: 300;
-	letter-spacing: 0.2px;
-	color: #fff;
-}
-
-footer em {
-	font-style: normal;
-	font-weight: 600;
-}
-
-footer a {
-	color: #fff;
-}
-
-footer a:hover {
-	color: #3CF;
-}
-
-.infocon{
+	cursor: pointer;
 	
-	font-size: 30px;
-	width: 75%;
-	height: auto;
-	
-
-}
-.take>P{ 
-	margin: 1em;
-	height: auto;
-	font-weight: 400;
-
-}
-.infotable{
-	display: flex;
-}
-.infotable1{
-	display: flex;
-	flex-direction: column;
-	text-align: left;
-	justify-content: space-around;
-	width: 50%;
-}
-.infotable2{
-	display: flex;
-	flex-direction: column;
-	text-align: left;
-	justify-content: space-around;
-	width: 50%;
-}
-.about{
-	display: flex;
-	margin: 0px;
-	padding-bottom: 1em;
-	padding-top: 1em;
-	margin-left: 1em;
-	border-bottom: solid;
-	
-	
-	font-size: 25px;
-	font-weight: 900;
 }
 
+ /* Стили для кнопки */
+ .but {
+	display: block; /* Делаем кнопку блочным элементом */
+	margin: 20px auto; /* Автоматические отступы по бокам для центрирования */
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+
+/* Скрытый блок с информацией */
+.hidden {
+	display: none;
+}
 
 /* =====================
 ----- GALLERY PAGE -----
@@ -765,31 +680,8 @@ footer a:hover {
 	}
 
 	footer {
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-		
-	}
-	.infotable{
-		display: flex;
-		flex-direction: column;
-	}
-	.infotable1{
-		width: 100%;
-	}
-	.infotable2{
-		width: 100%;
-	}
-	.infocon{
-		display: flex;
-		flex-direction: column;
-		height: auto;
-	}
-	.about{
-		margin: 0;
-	}
-	.card{
-		width: 50%;
+		margin-top: -50px;
+		padding: 200px 0px 20px 0px;
 	}
 }
 
@@ -867,7 +759,7 @@ body.lb-disable-scrolling {
 
 .lb-outerContainer {
   position: relative;
-  zoom: 1;
+  *zoom: 1;
   width: 250px;
   height: 250px;
   margin: 0 auto;
@@ -965,7 +857,7 @@ body.lb-disable-scrolling {
 .lb-dataContainer {
   margin: 0 auto;
   padding-top: 5px;
-  zoom: 1;
+  *zoom: 1;
   width: 100%;
   -moz-border-radius-bottomleft: 4px;
   -webkit-border-bottom-left-radius: 4px;
